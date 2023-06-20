@@ -17,10 +17,12 @@ But : separer la creation d'objet du system
 
 ### Pattern Abstract Factory 
 - nom du projet : AbstractFactory
+- example de UML : ![Abstract Factory](image.png)
 - description: 
 - architecture :
 
 ### Pattern Builder 
 - nom du projet : 
-- description: 
+- example de UML : ![Abstract Factory](image.png)
+- description : 
 - architecture :
