@@ -67,18 +67,16 @@ Definition prof : L’objectif des patterns de structuration est de faciliter l�
 - definition : ajouter en dynamique des objets sans forcement touches au code source , et sans interagire avec l'interface , c'est une alternative a la creation d'une sous classe pour ajouter des fonctionalites a un objet
 - nom du projet : Decorator
 - example de UML : ![Decorator Builder](/imgs/Decorator.png)
-- relation du UML avec le pattern : 
-- description :
-- utilisation :
+- description :on peut ajouter des comportements differents a des objets existant sans les modifier grace a des decorateurs 
+- utilisation :si on veut mettre plusieurs composant graphiques , permettant a chaque utilisateur de customizer grace a ces decorateurs .
 
 ## Pattern Bridge 
-- definition : 
+- definition : Separe abstraction de l'implementation , il peuvent varier independament de l'autre 
 - nom du projet : Bridge
 - example de UML : ![Bridge Builder](/imgs/bridge1.png)
 - example de UML : ![Bridge Builder](/imgs/bridge2.png)
-- relation du UML avec le pattern : 
-- description :
-- utilisation :
+- description :on trouve des classes abstraites (abstraction) qui definit les interfaces des objets clients , puis on trouve des classes refinedAbstraction qui etende ces classes d'abstraction pour ajouter des modifs
+- utilisation :si on veux connecter des base differentes sans avoir a ce soucier de se confondre entre les implementations et les interfaces
 
 ## Pattern Composite 
 - definition prof : Au sein de notre système de vente de véhicules, nous voulons représenter les sociétés clientes,
@@ -93,13 +91,27 @@ Le pattern résout ce problème en unifiant l’interface des deux types de soci
 utilisant la composition récursive. Cette composition récursive est nécessaire car une société peut
 posséder des filiales qui possèdent elles-mêmes d’autres filiales.
 
-- definition : 
-- nom du projet : Bridge
+- definition : on peut le decrire comme un arbre ou existe des noeuds de deux branches , et si on modifie un noeuds on varie ces branches , alors on peut trouver une interface qui varie des groupes d'objets de meme facon 
+- nom du projet : Composite
 - example de UML : ![Composite Builder](/imgs/Composite.png)
-- relation du UML avec le pattern : 
-- description :
-- utilisation :
+- description :On trouve des components pour les noeuds et des components pour les "branches" 
+- utilisation :very good for one too many relations 
 
 ## Troisieme Famille de pattern : Pattern de comportement
 
-Definition prof: 
+Definition du livre Fiodar_Sazanavets : Behavioral design patterns tell us how objects are supposed to behave.
+
+### Chain of responsibility 
+
+- definition : comme le nom indique c'est une chain (une suite) de traitements qui a chaque traitements a des comportements differents la permettant de faire passer le process ou non
+- nom du projet : Chain of responsibility
+- example de UML : ![Chain of responsibility Builder](/imgs/Chain.png)
+- description :on trouve une classe Handler qui represente l'interface commune pour tout les objets de la chaine , alors on delegue la responsabilite du traitements de donnees a ces objets qui sont differents et a chacune de choisire si ca doit passer ou non 
+- utilisation : si on veux ajouter bcp de filtre a nos requete 
+
+### Iterator pattern 
+
+- definition :Le pattern Iterator permet de fournir un moyen d'accéder séquentiellement aux éléments d'une collection sans exposer sa structure interne. Il encapsule l'accès et la navigation dans une collection, permettant aux clients de traiter chaque élément de manière uniforme, sans avoir à se soucier de la manière dont la collection est implémentée 
+- nom du projet : Iterator
+- example de UML : ![Iterator Builder](/imgs/Iterator.png)
+- description : On trouve une classe Iterator qui définit l'interface pour l'itération sur les éléments de la collection
