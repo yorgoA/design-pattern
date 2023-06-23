@@ -26,4 +26,4 @@ rendre le travail sous forme d'un depot Git documente, accompagne d'un dossier c
 - Builder Pattern
 - Decorator Pattern
 - Composite Pattern 
-- Strategy Pattern
+- Chain of responsibility 
