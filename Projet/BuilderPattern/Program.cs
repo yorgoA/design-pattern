@@ -1,8 +1,8 @@
 ﻿using System;
 
-public class Program
+class Program
 {
-    public static void Main(string[] args)
+    static void Main(string[] args)
     {
         Store store = new Store();
         IShoeBuilder nikeBuilder = new NikeShoeBuilder();
@@ -13,5 +13,20 @@ public class Program
 
         Console.WriteLine("Veuillez choisir un thème (manga , anime , soccer, basketball or food");
         string theme = Console.ReadLine();
+
+        if (brand.ToLower() == "nike")
+        {
+            nikeBuilder.SetBrand("Nike");
+            store.OrderShoe(nikeBuilder,brand, 200, theme); 
+        }
+        else if (brand.ToLower() == "adidas")
+        {
+            nikeBuilder.SetBrand("Adidas");
+            store.OrderShoe(adidasBuilder, brand,100, theme); 
+        }
+        else
+        {
+            Console.WriteLine("Marque de chaussures non reconnue.");
+        }
     }
 }

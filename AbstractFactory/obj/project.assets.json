@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/yaoun/Design-pattern-general/AbstractFactory/AbstractFactory.csproj",
+      "projectUniqueName": "/Users/yaoun/design-pattern/AbstractFactory/AbstractFactory.csproj",
       "projectName": "AbstractFactory",
-      "projectPath": "/Users/yaoun/Design-pattern-general/AbstractFactory/AbstractFactory.csproj",
+      "projectPath": "/Users/yaoun/design-pattern/AbstractFactory/AbstractFactory.csproj",
       "packagesPath": "/Users/yaoun/.nuget/packages/",
-      "outputPath": "/Users/yaoun/Design-pattern-general/AbstractFactory/obj/",
+      "outputPath": "/Users/yaoun/design-pattern/AbstractFactory/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/yaoun/.nuget/NuGet/NuGet.Config"

@@ -25,5 +25,8 @@ rendre le travail sous forme d'un depot Git documente, accompagne d'un dossier c
 - Factory Method 
 - Builder Pattern
 - Decorator Pattern
-- Composite Pattern 
-- Chain of responsibility 
+- Composite Pattern : on a ajoute fabrik et laces , car ce pattern est normalement utilise quand on a des objets avec des composant plus petit
+- Chain of responsibility : ce projet est un peu different des autres car pour pouvoir bien appliquer ce pattern j'ai modifie le concept du projet : l'utilisateur choisi un theme puis le PASS AU nIKEhANDLER , SI LE THEME N'EST PAS DIsponible chez nike il le passe a addidas
+
+## Conclusion
+Le pattern le plus adapté, à mon avis, est le Builder Pattern. Par définition, il sert à créer des objets faciles à personnaliser et c'est le plus facile pour l'avenir d'ajouter des marques ou des thèmes sans casser le code. Grâce à sa simplicité, il nous permet de créer des objets très complexes. Par exemple, on peut ajouter la couleur des lacets, la taille et plusieurs autres variables facilement.
